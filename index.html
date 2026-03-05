@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cephboy AI Voice</title>
+    <style>
+        body { font-family: sans-serif; background: #121212; color: white; text-align: center; padding: 20px; }
+        .btn { background: #0070f3; color: white; border: none; padding: 15px; border-radius: 8px; margin: 10px; width: 80%; }
+        .logo { font-size: 24px; font-weight: bold; color: #0070f3; }
+    </style>
+</head>
+<body>
+    <div class="logo">CEPHBOY AI</div>
+    <p>Clonez une voix et rendez-la "Cool"</p>
+    
+    <input type="file" id="audioFile" accept="audio/*" style="margin: 20px 0;">
+    
+    <button class="btn" onclick="process('clean')">Enlever Bruit & Musique</button>
+    <button class="btn" onclick="process('clone')">Cloner la Voix</button>
+
+    <div id="status"></div>
+
+    <script>
+        async function process(action) {
+            document.getElementById('status').innerText = "Traitement en cours...";
+            // Ici, on connectera ton API Hugging Face plus tard
+        }
+    </script>
+</body>
+</html>
